@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <string.h>
  int main(){
     char obj[50];
   printf("Digite seu objetivo, ex: quem é o melhor jogador da história dos Santos (max: 50 caracteres):   ");
@@ -36,33 +36,84 @@
     printf("digite o décimo nome (max 10 caractéres): ");
     scanf("%10s", p10);
      printf("\n %s \n", obj);
+
     char r1[10];
+    
     printf("%s ou %s?", p1, p2);
     scanf("%10s", r1);
-    char r2[10];
+    if (strcmp(p1, r1) != 0 && strcmp(p2, r1) != 0){
+      printf("erro, digite corretamente \n");
+     
+      
+    }
+    else {
+      char r2[10];
     printf("%s ou %s?", r1, p3);
     scanf("%10s", r2);
-    char r3[10];
+        if (strcmp(r1, r2) != 0 && strcmp(p3, r2) != 0){
+      printf("erro, digite corretamente");
+    }
+    else{
+      char r3[10];
     printf("%s ou %s?", r2, p4);
     scanf("%10s", r3); 
-     char r4[10];
+        if (strcmp(r2, r3) != 0 && strcmp(p4, r3) != 0){
+      printf("erro, digite corretamente");
+    }
+    else {
+      char r4[10];
     printf("%s ou %s?", r3, p5);
     scanf("%10s", r4);
-    char r5[10];
+        if (strcmp(r3, r4) != 0 && strcmp(p5, r4) != 0){
+      printf("erro, digite corretamente");
+    }
+    else{
+       char r5[10];
     printf("%s ou %s?", r4, p6);
     scanf("%10s", r5);
+        if (strcmp(r4, r5) != 0 && strcmp(p6, r5) != 0){
+      printf("erro, digite corretamente\n");
+      
+    }
+    else{
      char r6[10];
     printf("%s ou %s?", r5, p7);
     scanf("%10s", r6);
-     char r7[10];
+        if (strcmp(r5, r6) != 0 && strcmp(p7, r6) != 0){
+      printf("erro, digite corretamente");
+    }
+    else{
+      char r7[10];
     printf("%s ou %s?", r6, p8);
     scanf("%10s", r7);
-     char r8[10];
+        if (strcmp(r6, r7) != 0 && strcmp(p8, r7) != 0){
+      printf("erro, digite corretamente");
+    }
+    else{
+      char r8[10];
     printf("%s ou %s?", r7, p9);
     scanf("%10s", r8);
-     char r9[10];
+        if (strcmp(r7, r8) != 0 && strcmp(p9, r8) != 0){
+      printf("erro, digite corretamente");
+    }
+    else{
+           char r9[10];
     printf("%s ou %s?", r8, p10);
     scanf("%10s", r9);
-
+        if (strcmp(p10, r9) != 0 && strcmp(r8, r9) != 0){
+      printf("erro, digite corretamente");
+    }
+    else{
+        printf("%s é o mais escolhido \n", r9);   
+    }
+  }
+    }
+    }
+    }
+    }
+    }
+    }
+    } 
+ }
     printf("%s é o melhor", r9); 
  }
